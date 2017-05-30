@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		52E51C1F1EDD8E34003E2EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C1E1EDD8E34003E2EFB /* AppDelegate.swift */; };
-		52E51C211EDD8E34003E2EFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C201EDD8E34003E2EFB /* ViewController.swift */; };
 		52E51C241EDD8E34003E2EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E51C221EDD8E34003E2EFB /* Main.storyboard */; };
 		52E51C261EDD8E34003E2EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E51C251EDD8E34003E2EFB /* Assets.xcassets */; };
 		52E51C291EDD8E34003E2EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E51C271EDD8E34003E2EFB /* LaunchScreen.storyboard */; };
+		52E51C311EDD9580003E2EFB /* MMEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */; };
+		52E51C331EDD95DB003E2EFB /* MeMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C321EDD95DB003E2EFB /* MeMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52E51C1B1EDD8E34003E2EFB /* MeMe-2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MeMe-2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E51C1E1EDD8E34003E2EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52E51C201EDD8E34003E2EFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52E51C231EDD8E34003E2EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52E51C251EDD8E34003E2EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E51C281EDD8E34003E2EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52E51C2A1EDD8E34003E2EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMEditorViewController.swift; sourceTree = "<group>"; };
+		52E51C321EDD95DB003E2EFB /* MeMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeMe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				52E51C1E1EDD8E34003E2EFB /* AppDelegate.swift */,
-				52E51C201EDD8E34003E2EFB /* ViewController.swift */,
+				52E51C321EDD95DB003E2EFB /* MeMe.swift */,
+				52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */,
 				52E51C221EDD8E34003E2EFB /* Main.storyboard */,
 				52E51C251EDD8E34003E2EFB /* Assets.xcassets */,
 				52E51C271EDD8E34003E2EFB /* LaunchScreen.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					52E51C1A1EDD8E34003E2EFB = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = LTQJ3ZB4X8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E51C211EDD8E34003E2EFB /* ViewController.swift in Sources */,
+				52E51C311EDD9580003E2EFB /* MMEditorViewController.swift in Sources */,
 				52E51C1F1EDD8E34003E2EFB /* AppDelegate.swift in Sources */,
+				52E51C331EDD95DB003E2EFB /* MeMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LTQJ3ZB4X8;
 				INFOPLIST_FILE = "MeMe-2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shyam.MeMe-2-0";
@@ -274,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LTQJ3ZB4X8;
 				INFOPLIST_FILE = "MeMe-2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shyam.MeMe-2-0";
