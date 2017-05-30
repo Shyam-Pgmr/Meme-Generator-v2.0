@@ -29,7 +29,7 @@ class MMEditorViewController: UIViewController {
         paragraphStype.alignment = .center
         
         var attributes:[String: Any] = [
-            NSFontAttributeName: UIFont.systemFont(ofSize: 60.0),
+            NSFontAttributeName: UIFont.systemFont(ofSize: 40.0),
             NSStrokeWidthAttributeName: -2.0,
             NSParagraphStyleAttributeName: paragraphStype,
             NSStrokeColorAttributeName: UIColor.black,
