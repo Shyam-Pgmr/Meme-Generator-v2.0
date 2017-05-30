@@ -37,13 +37,6 @@ class MMMemeTableViewController: UITableViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         savedMemes = appDelegate.savedMemes
         tableView.reloadData()
-        
-        if savedMemes.count == 0 {
-
-            // Show Editor Screen
-            let editorController = storyboard?.instantiateViewController(withIdentifier: "MMEditorViewController") as! MMEditorViewController
-            present(UINavigationController.init(rootViewController: editorController), animated: false, completion: nil)
-        }
     }
     
     func openMemeDetail(using meme:MeMe) {
@@ -54,11 +47,17 @@ class MMMemeTableViewController: UITableViewController {
         navigationController?.pushViewController(memeDetailController, animated: true)
     }
     
-    // MARK: - TableView Datasource
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+    func removeMeme(at index:Int) {
+        
+        savedMemes.remove(at:index)
+        tableView.reloadData()
+        
+        // update Shared Object
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.savedMemes.remove(at:index)
     }
+    
+    // MARK: - TableView Datasource
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return savedMemes.count
@@ -87,4 +86,14 @@ class MMMemeTableViewController: UITableViewController {
         openMemeDetail(using: meme)
     }
 
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.delete) {
+            removeMeme(at: indexPath.row)
+        }
+    }
+    
 }

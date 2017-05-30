@@ -82,7 +82,6 @@ class MMEditorViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         savedMemes = appDelegate.savedMemes
         
-        enableOrDisbleCancelButtonBasedOnSavedMemesCount()
         enableOrDisbleCameraButtonBasedOnAvailability()
         enableOrDisbleShareButtonBasedOnAvailability()
         setupTextFieldAttributes()
@@ -123,10 +122,6 @@ class MMEditorViewController: UIViewController {
     
     func close() {
         dismiss(animated: true, completion: nil)
-    }
-    
-    func enableOrDisbleCancelButtonBasedOnSavedMemesCount() {
-        cancelBarButtonItem.isEnabled = savedMemes.count != 0
     }
     
     func enableOrDisbleCameraButtonBasedOnAvailability() {
