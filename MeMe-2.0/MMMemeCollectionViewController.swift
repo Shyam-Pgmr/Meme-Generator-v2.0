@@ -60,11 +60,6 @@ class MMMemeCollectionViewController: UICollectionViewController {
     
     // MARK: CollectionView DataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return savedMemes.count
     }

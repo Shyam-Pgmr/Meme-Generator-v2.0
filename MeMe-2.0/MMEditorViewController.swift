@@ -170,21 +170,15 @@ class MMEditorViewController: UIViewController {
     
     func generateMeMeImage() -> UIImage? {
         
-        // Hide naviation bar and toolbar so that It is not capture while taking snapshot
-        navigationController?.navigationBar.isHidden = true
-        toolbar.isHidden = true
-        
         // Create UIImage by snapshotting screen's super view
-        UIGraphicsBeginImageContext(view.frame.size)
-        view.drawHierarchy(in: view.frame, afterScreenUpdates: true)
+        var size = view.frame.size
+        size.height -= toolbar.frame.height
+        UIGraphicsBeginImageContext(size)
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
         
         let memeImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        // Show naviation bar and toolbar
-        navigationController?.navigationBar.isHidden = false
-        toolbar.isHidden = false
-        
+                
         return memeImage
     }
     
