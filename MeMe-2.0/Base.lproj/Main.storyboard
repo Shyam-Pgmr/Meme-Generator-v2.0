@@ -197,6 +197,11 @@
                                 <action selector="shareButtonTapAction:" destination="2x3-ii-yFc" id="WRE-JW-6iP"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="i9c-t2-GaY">
+                            <connections>
+                                <action selector="cancelButtonTapAction:" destination="2x3-ii-yFc" id="Alo-fK-SlZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>

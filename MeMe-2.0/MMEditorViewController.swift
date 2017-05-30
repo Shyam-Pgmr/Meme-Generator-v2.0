@@ -68,6 +68,11 @@ class MMEditorViewController: UIViewController {
         shareMeme()
     }
     
+    
+    @IBAction func cancelButtonTapAction(_ sender: UIBarButtonItem) {
+        close()
+    }
+    
     // MARK: Helper
     
     func setupView() {
@@ -108,6 +113,10 @@ class MMEditorViewController: UIViewController {
                 
             present(controller, animated: true, completion: nil)
         }
+    }
+    
+    func close() {
+        dismiss(animated: true, completion: nil)
     }
     
     func enableOrDisbleCameraButtonBasedOnAvailability() {
