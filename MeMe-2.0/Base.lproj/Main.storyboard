@@ -14,7 +14,7 @@
         <!--Sent Memes-->
         <scene sceneID="Ozm-tJ-YiJ">
             <objects>
-                <tabBarController id="meB-Oi-vav" customClass="MMSentMemeViewController" customModule="MeMe_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="meB-Oi-vav" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Sent Memes" id="TAG-aE-8Np">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ELe-bP-qCS"/>
                     </navigationItem>
