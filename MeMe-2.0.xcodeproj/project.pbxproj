@@ -13,6 +13,9 @@
 		52E51C291EDD8E34003E2EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E51C271EDD8E34003E2EFB /* LaunchScreen.storyboard */; };
 		52E51C311EDD9580003E2EFB /* MMEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */; };
 		52E51C331EDD95DB003E2EFB /* MeMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C321EDD95DB003E2EFB /* MeMe.swift */; };
+		52E51C351EDDA647003E2EFB /* MMMemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C341EDDA647003E2EFB /* MMMemeTableViewCell.swift */; };
+		52E51C371EDDA816003E2EFB /* MMMemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C361EDDA816003E2EFB /* MMMemeTableViewController.swift */; };
+		52E51C3E1EDDA882003E2EFB /* MMMemeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C3D1EDDA882003E2EFB /* MMMemeCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		52E51C2A1EDD8E34003E2EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMEditorViewController.swift; sourceTree = "<group>"; };
 		52E51C321EDD95DB003E2EFB /* MeMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeMe.swift; sourceTree = "<group>"; };
+		52E51C341EDDA647003E2EFB /* MMMemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeTableViewCell.swift; sourceTree = "<group>"; };
+		52E51C361EDDA816003E2EFB /* MMMemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeTableViewController.swift; sourceTree = "<group>"; };
+		52E51C3D1EDDA882003E2EFB /* MMMemeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,49 @@
 			isa = PBXGroup;
 			children = (
 				52E51C1E1EDD8E34003E2EFB /* AppDelegate.swift */,
-				52E51C321EDD95DB003E2EFB /* MeMe.swift */,
-				52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */,
-				52E51C221EDD8E34003E2EFB /* Main.storyboard */,
+				52E51C381EDDA824003E2EFB /* Model */,
+				52E51C3A1EDDA832003E2EFB /* Controller */,
+				52E51C3B1EDDA838003E2EFB /* Cell */,
+				52E51C3C1EDDA842003E2EFB /* View */,
 				52E51C251EDD8E34003E2EFB /* Assets.xcassets */,
-				52E51C271EDD8E34003E2EFB /* LaunchScreen.storyboard */,
 				52E51C2A1EDD8E34003E2EFB /* Info.plist */,
 			);
 			path = "MeMe-2.0";
+			sourceTree = "<group>";
+		};
+		52E51C381EDDA824003E2EFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52E51C321EDD95DB003E2EFB /* MeMe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		52E51C3A1EDDA832003E2EFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52E51C361EDDA816003E2EFB /* MMMemeTableViewController.swift */,
+				52E51C301EDD9580003E2EFB /* MMEditorViewController.swift */,
+				52E51C3D1EDDA882003E2EFB /* MMMemeCollectionViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		52E51C3B1EDDA838003E2EFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52E51C341EDDA647003E2EFB /* MMMemeTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		52E51C3C1EDDA842003E2EFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52E51C221EDD8E34003E2EFB /* Main.storyboard */,
+				52E51C271EDD8E34003E2EFB /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +134,7 @@
 		52E51C131EDD8E34003E2EFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MM;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Shyam;
@@ -141,6 +183,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52E51C311EDD9580003E2EFB /* MMEditorViewController.swift in Sources */,
+				52E51C351EDDA647003E2EFB /* MMMemeTableViewCell.swift in Sources */,
+				52E51C3E1EDDA882003E2EFB /* MMMemeCollectionViewController.swift in Sources */,
+				52E51C371EDDA816003E2EFB /* MMMemeTableViewController.swift in Sources */,
 				52E51C1F1EDD8E34003E2EFB /* AppDelegate.swift in Sources */,
 				52E51C331EDD95DB003E2EFB /* MeMe.swift in Sources */,
 			);
