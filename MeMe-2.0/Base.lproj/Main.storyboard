@@ -207,6 +207,9 @@
                             </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zY2-MR-eZY">
                                 <rect key="frame" x="0.0" y="559" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Lh0-xs-hdb"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem systemItem="camera" id="Q07-Md-HwT">
                                         <connections>
@@ -225,7 +228,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zY2-MR-eZY" secondAttribute="trailing" id="0lF-ia-nMi"/>
-                            <constraint firstItem="C0e-SJ-c3T" firstAttribute="top" secondItem="zY2-MR-eZY" secondAttribute="bottom" id="9Bd-Od-Aud"/>
+                            <constraint firstAttribute="bottom" secondItem="zY2-MR-eZY" secondAttribute="bottom" id="FSp-4U-qAb"/>
                             <constraint firstAttribute="trailing" secondItem="Iv0-nW-eiu" secondAttribute="trailing" id="LIZ-oT-Pbx"/>
                             <constraint firstItem="den-tD-6d0" firstAttribute="leading" secondItem="cid-5B-txv" secondAttribute="leading" id="OFs-Ht-tGs"/>
                             <constraint firstItem="Iv0-nW-eiu" firstAttribute="top" secondItem="1X2-JC-bKt" secondAttribute="top" id="QuJ-aq-wtG"/>
