@@ -188,6 +188,9 @@ class MMEditorViewController: UIViewController {
         let meme = MeMe(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: pictureImageView.image!, memeImage: memeImage)
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.savedMemes.append(meme) // Save in Shared Meme Array
+        
+        // Close screen after saving
+        close()
     }
     
 }
