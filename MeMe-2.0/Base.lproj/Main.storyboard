@@ -134,13 +134,27 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="T82-2n-nN6">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MMMemeCollectionViewCell" id="T82-2n-nN6" customClass="MMMemeCollectionViewCell" customModule="MeMe_2_0" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hcz-BD-vzd">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="Hcz-BD-vzd" firstAttribute="leading" secondItem="T82-2n-nN6" secondAttribute="leading" id="4rB-Hc-X4p"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hcz-BD-vzd" secondAttribute="trailing" id="C7y-Kz-4B9"/>
+                                    <constraint firstItem="Hcz-BD-vzd" firstAttribute="top" secondItem="T82-2n-nN6" secondAttribute="top" id="ICm-Z9-xJr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hcz-BD-vzd" secondAttribute="bottom" id="apg-Xj-L4w"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="memeImageView" destination="Hcz-BD-vzd" id="ttU-zr-9vL"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

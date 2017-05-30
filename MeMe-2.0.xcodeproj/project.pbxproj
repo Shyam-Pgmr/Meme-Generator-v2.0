@@ -16,6 +16,7 @@
 		52E51C351EDDA647003E2EFB /* MMMemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C341EDDA647003E2EFB /* MMMemeTableViewCell.swift */; };
 		52E51C371EDDA816003E2EFB /* MMMemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C361EDDA816003E2EFB /* MMMemeTableViewController.swift */; };
 		52E51C3E1EDDA882003E2EFB /* MMMemeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C3D1EDDA882003E2EFB /* MMMemeCollectionViewController.swift */; };
+		52E51C401EDDA906003E2EFB /* MMMemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E51C3F1EDDA906003E2EFB /* MMMemeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		52E51C341EDDA647003E2EFB /* MMMemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeTableViewCell.swift; sourceTree = "<group>"; };
 		52E51C361EDDA816003E2EFB /* MMMemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeTableViewController.swift; sourceTree = "<group>"; };
 		52E51C3D1EDDA882003E2EFB /* MMMemeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeCollectionViewController.swift; sourceTree = "<group>"; };
+		52E51C3F1EDDA906003E2EFB /* MMMemeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMemeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				52E51C341EDDA647003E2EFB /* MMMemeTableViewCell.swift */,
+				52E51C3F1EDDA906003E2EFB /* MMMemeCollectionViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E51C401EDDA906003E2EFB /* MMMemeCollectionViewCell.swift in Sources */,
 				52E51C311EDD9580003E2EFB /* MMEditorViewController.swift in Sources */,
 				52E51C351EDDA647003E2EFB /* MMMemeTableViewCell.swift in Sources */,
 				52E51C3E1EDDA882003E2EFB /* MMMemeCollectionViewController.swift in Sources */,
