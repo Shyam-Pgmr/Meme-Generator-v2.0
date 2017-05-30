@@ -255,6 +255,7 @@
                     <connections>
                         <outlet property="bottomTextField" destination="den-tD-6d0" id="OmA-da-xpR"/>
                         <outlet property="cameraBarButtonItem" destination="Q07-Md-HwT" id="tMf-kI-e38"/>
+                        <outlet property="cancelBarButtonItem" destination="i9c-t2-GaY" id="uFS-rt-TjF"/>
                         <outlet property="pictureImageView" destination="Iv0-nW-eiu" id="c79-Gv-GWJ"/>
                         <outlet property="shareBarButtonItem" destination="JeL-jY-Q6N" id="vah-dV-ouq"/>
                         <outlet property="toolbar" destination="zY2-MR-eZY" id="uLw-Hu-ML9"/>
@@ -327,6 +328,6 @@
         <image name="ic_table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TBj-Kk-BsC"/>
+        <segue reference="o5U-pK-50Z"/>
     </inferredMetricsTieBreakers>
 </document>

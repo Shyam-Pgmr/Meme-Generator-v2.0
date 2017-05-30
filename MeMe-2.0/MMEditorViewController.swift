@@ -11,7 +11,8 @@ import UIKit
 class MMEditorViewController: UIViewController {
 
     // MARK: Outlets
-    
+
+    @IBOutlet weak var cancelBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var cameraBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var shareBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var pictureImageView: UIImageView!
@@ -36,7 +37,8 @@ class MMEditorViewController: UIViewController {
         
         return attributes
     }()
-    
+    var savedMemes = [MeMe]()
+
     // MARK: View LifeCycle
     
     override func viewDidLoad() {
@@ -77,6 +79,10 @@ class MMEditorViewController: UIViewController {
     
     func setupView() {
     
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        savedMemes = appDelegate.savedMemes
+        
+        enableOrDisbleCancelButtonBasedOnSavedMemesCount()
         enableOrDisbleCameraButtonBasedOnAvailability()
         enableOrDisbleShareButtonBasedOnAvailability()
         setupTextFieldAttributes()
@@ -117,6 +123,10 @@ class MMEditorViewController: UIViewController {
     
     func close() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func enableOrDisbleCancelButtonBasedOnSavedMemesCount() {
+        cancelBarButtonItem.isEnabled = savedMemes.count != 0
     }
     
     func enableOrDisbleCameraButtonBasedOnAvailability() {

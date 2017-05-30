@@ -37,6 +37,13 @@ class MMMemeTableViewController: UITableViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         savedMemes = appDelegate.savedMemes
         tableView.reloadData()
+        
+        if savedMemes.count == 0 {
+
+            // Show Editor Screen
+            let editorController = storyboard?.instantiateViewController(withIdentifier: "MMEditorViewController") as! MMEditorViewController
+            present(UINavigationController.init(rootViewController: editorController), animated: false, completion: nil)
+        }
     }
         
     // MARK: - TableView Datasource
