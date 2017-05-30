@@ -54,6 +54,7 @@ class MMMemeCollectionViewController: UICollectionViewController {
         
         let memeDetailController = storyboard?.instantiateViewController(withIdentifier: "MMMemeDetailViewController") as! MMMemeDetailViewController
         memeDetailController.meme = meme
+        memeDetailController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(memeDetailController, animated: true)
     }
     
