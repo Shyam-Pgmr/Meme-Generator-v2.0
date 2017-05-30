@@ -12,5 +12,8 @@ class MMMemeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var memeImageView: UIImageView!
     
+    func setupCell(using meme:MeMe) {
+        memeImageView.image = meme.memeImage
+    }
     
 }
