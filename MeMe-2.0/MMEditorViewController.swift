@@ -19,7 +19,7 @@ class MMEditorViewController: UIViewController {
     @IBOutlet weak var bottomTextField: UITextField!
     @IBOutlet weak var toolbar: UIToolbar!
     
-    // MARK: Constants
+    // MARK: Model
     
     let TOP = "Top"
     let BOTTOM = "Bottom"
@@ -72,7 +72,7 @@ class MMEditorViewController: UIViewController {
     @IBAction func cancelButtonTapAction(_ sender: UIBarButtonItem) {
         close()
     }
-    
+
     // MARK: Helper
     
     func setupView() {

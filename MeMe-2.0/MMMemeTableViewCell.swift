@@ -20,4 +20,13 @@ class MMMemeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    // MARK: Helper
+    
+    func setupCell(using meme:MeMe) {
+        memeImageView.image = meme.memeImage
+        topLabel.text = "Top Text - " + meme.topText
+        bottomLabel.text = "Bottom Text - " + meme.bottomText
+    }
+    
 }
